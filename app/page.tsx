@@ -1,0 +1,25 @@
+import Navbar from "@/components/navbar";
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div className="h-screen overflow-hidden object-cover">
+      <Navbar />
+      <video autoPlay loop muted src={"/video/bgvideo.mp4"} 
+      className="absolute top-0 z-10 w-full h-full object-cover"
+      />
+      <div className="absolute pt-6 top-0 z-20 flex flex-col justify-center items-center w-screen h-full">
+        <div className="relative w-96 h-96">
+        <Image 
+        src={'/image/heroLogo.png'}
+        
+        fill={true}
+    
+        alt="Logo"
+        />
+        </div>
+        <h1 className="text-3xl text-primarywhite text-nexalight">We are Providing Best service in Town</h1>
+      </div>
+    </div>
+  );
+}
