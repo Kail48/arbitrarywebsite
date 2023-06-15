@@ -9,7 +9,7 @@ export default function Navbar() {
         <li className="hover:text-purple-300"><Link href='/'>Team</Link></li>
         <li className="hover:text-purple-300"><Link href='/'>Contact</Link></li>
         <li className="hover:text-purple-300"><Link href='/'>Gallery</Link></li>
-        
+        <li className="hover:text-purple-300"><Link href='/'>services</Link></li>
       </ul>
     </>
   );
