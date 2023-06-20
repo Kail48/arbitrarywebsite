@@ -7,6 +7,23 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        dropdown:{
+          '0%':{opacity:0,transform:'translate(0,0)'},
+          '100%':{opacity:1,transform:'translate(0,20px)'}
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+        dropdown:'dropdown 0.5s ease-in-out forwards'
+      },
+      fontSize:{
+        
+      },
       colors:{
         primarywhite:"#F3F2F2",
         grey:"#171A20"
