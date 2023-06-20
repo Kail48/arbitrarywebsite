@@ -9,7 +9,7 @@ export default function Home() {
       className="absolute top-0 z-10 w-full h-full object-cover"
       />
       <div className="absolute pt-6 top-0 z-20 flex flex-col justify-center items-center w-screen h-full">
-        <div className="relative w-96 h-96">
+        <div className="relative w-48 h-48 md:w-96 md:h-96">
         <Image 
         src={'/image/heroLogo.png'}
         
@@ -18,7 +18,7 @@ export default function Home() {
         alt="Logo"
         />
         </div>
-        <h1 className="text-3xl text-primarywhite text-nexalight">We are Providing Best service in Town</h1>
+        <h1 className="text-xl md:text-3xl text-primarywhite text-nexalight text-center">We are Providing Best service in Town</h1>
       </div>
     </div>
   );
