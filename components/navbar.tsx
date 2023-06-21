@@ -15,7 +15,7 @@ export default function Navbar() {
           <Link href="/">Team</Link>
         </li>
         <li className="hover:text-purple-300 hover:animate-wiggle">
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li className="hover:text-purple-300 hover:animate-wiggle">
           <Link href="/">Gallery</Link>
