@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebookF,FaYoutube,FaUser,FaEnvelope } from "react-icons/fa";
 export default function page() {
   return (
     <div className="bg-white h-screen">
@@ -22,6 +23,39 @@ export default function page() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+        </div>
+        <div className="flex text-black font-nexalight font-[700] gap-x-12 md:mt-6">
+            <div>
+                <div className="flex items-center justify-center gap-x-2">
+                    <FaUser className="text-4xl"/>
+                    <div>
+                        <h1>MD: Bipin Nakarmi</h1>
+                        <h1>ED: Abiral Shakya</h1>
+                    </div>
+                </div>
+                <Link href='https://www.youtube.com/@ChannelArbitrary'>
+                <div className="flex items-center  gap-x-2 mt-2">
+                    <FaYoutube className="text-3xl text-red-600 hover:animate-bounce"/>
+                    <h1 className="hover:animate-pulse">Channel Arbitrary</h1>
+                </div>
+                </Link>
+            </div>
+
+            <div>
+            <div className="flex items-center justify-center gap-x-2">
+                    <FaEnvelope className="text-4xl hover:animate-wiggle"/>
+                    <div className="w-min-content">
+                    <a href = "mailto: bipinakabpm@gmail.com"><h1>bipinakabpm@gmail.com</h1></a>
+                    <a href = "mailto: bizsabiralshakya@gmail.com"><h1>bizsabiralshakya@gmail.com</h1></a>
+                    </div>
+                </div>
+                <Link href='https://www.facebook.com/arbitrary.group/'>
+                <div className="flex items-center  gap-x-2 mt-2">
+                    <FaFacebookF className="text-3xl text-blue-600 hover:animate-bounce"/>
+                    <h1 className="hover:animate-pulse">@Arbitrary_Group</h1>
+                </div>
+                </Link>
+            </div>
         </div>
       </div>
     </div>
