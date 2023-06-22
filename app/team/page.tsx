@@ -44,7 +44,7 @@ export default function Page() {
         </Link>
       </div>
       <div className="mt-8 py-4 flex flex-col gap-y-12">
-        {staffList.map((staff)=><TeamMemberCard data={staff}/>)}
+        {staffList.map((staff)=><TeamMemberCard key={staff.name} data={staff}/>)}
       </div>
     </div>
   );
