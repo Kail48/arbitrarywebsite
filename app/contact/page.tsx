@@ -2,10 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF,FaYoutube,FaUser,FaEnvelope } from "react-icons/fa";
+
+export const metadata = {
+  title: 'Arbitrary contact page',
+  description: 'contact page for arbitrary nepal, office location, email address and links',
+}
+
 export default function page() {
   return (
     <div className="bg-white h-screen">
-      <div className="relative h-[115px] w-[175px] left-2 top-2">
+      <div className="relative h-[115px] w-[175px] left-2 top-2 hover:animate-pulse">
         <Link href="/">
           <Image src={"/image/logoBlack.png"} alt="logo" fill={true} />
         </Link>

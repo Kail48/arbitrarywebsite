@@ -3,6 +3,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Arbitrary subsidiaries ',
+  description: 'Subsidiaries and branches of arbitrary group nepal',
+}
+
 export default function Subsidiaries() {
   const subsidiaryData = [
     {

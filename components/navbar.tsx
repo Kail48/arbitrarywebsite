@@ -6,13 +6,15 @@ export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
 
   return (
+    //this part of navbar is hidden in small devices
     <>
+    
       <ul className="hidden text-primarywhite absolute top-0 z-50 font-nexaheavy text-lg w-full md:flex md:justify-end md:px-6 md:py-4 md:gap-x-8 ">
         <li className="hover:text-purple-300 hover:animate-wiggle">
           <Link href="/">About</Link>
         </li>
         <li className="hover:text-purple-300 hover:animate-wiggle">
-          <Link href="/">Team</Link>
+          <Link href="/team">Team</Link>
         </li>
         <li className="hover:text-purple-300 hover:animate-wiggle">
           <Link href="/contact">Contact</Link>
@@ -44,8 +46,9 @@ export default function Navbar() {
           </>
         )}
       </div>
-
+          
       <ul
+      
         className={`${
           showNav ? "" : "hidden"
         } text-primarywhite absolute right-2 top-20 tracking-wider text-right z-50 font-nexaheavy space-y-6 md:text-lg md:w-full md:hiddden`}
@@ -57,7 +60,7 @@ export default function Navbar() {
           <Link href="/">Team</Link>
         </li>
         <li className="hover:text-purple-300 animate-dropdown ">
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
         <li className="hover:text-purple-300 animate-dropdown ">
           <Link href="/">Gallery</Link>
