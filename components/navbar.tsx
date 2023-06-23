@@ -10,16 +10,16 @@ export default function Navbar() {
     <>
     
       <ul className="hidden text-primarywhite absolute top-0 z-50 font-nexaheavy text-lg w-full md:flex md:justify-end md:px-6 md:py-4 md:gap-x-8 ">
-        <li className="hover:text-purple-300 hover:animate-wiggle">
+        <li className="hover:text-purple-300 ">
           <Link href="/">About</Link>
         </li>
-        <li className="hover:text-purple-300 hover:animate-wiggle">
+        <li className="hover:text-purple-300 ">
           <Link href="/team">Team</Link>
         </li>
-        <li className="hover:text-purple-300 hover:animate-wiggle">
+        <li className="hover:text-purple-300 ">
           <Link href="/contact">Contact</Link>
         </li>
-        <li className="hover:text-purple-300 hover:animate-wiggle">
+        <li className="hover:text-purple-300 ">
           <Link href="/">Gallery</Link>
         </li>
       </ul>
@@ -57,7 +57,7 @@ export default function Navbar() {
           <Link href="/">About</Link>
         </li>
         <li className="hover:text-purple-300 animate-dropdown animate-delay-1000">
-          <Link href="/">Team</Link>
+          <Link href="/team">Team</Link>
         </li>
         <li className="hover:text-purple-300 animate-dropdown ">
           <Link href="/contact">Contact</Link>

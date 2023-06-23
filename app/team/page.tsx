@@ -43,6 +43,8 @@ export default function Page() {
           <Image src={"/image/logoBlack.png"} alt="logo" fill={true} />
         </Link>
       </div>
+      <h1 className="text-3xl mt-12 mb-6 md:mt-2 md:text-5xl font-nexalight font-[900] text-center text-black">Our Team</h1>
+      
       <div className="mt-8 py-4 flex flex-col gap-y-12">
         {staffList.map((staff)=><TeamMemberCard key={staff.name} data={staff}/>)}
       </div>
