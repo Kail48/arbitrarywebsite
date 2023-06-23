@@ -40,7 +40,7 @@ export default function Page() {
     <div className="bg-white h-min-content pb-12">
       <div className="relative h-[115px] w-[175px] left-2 top-2 hover:animate-pulse">
         <Link href="/">
-          <Image src={"/image/logoBlack.png"} alt="logo" fill={true} />
+          <Image src={"/image/logoBlack.png"} alt="logo" fill={true} loading="lazy"/>
         </Link>
       </div>
       <h1 className="text-3xl mt-12 mb-6 md:mt-2 md:text-5xl font-nexalight font-[900] text-center text-black">Our Team</h1>

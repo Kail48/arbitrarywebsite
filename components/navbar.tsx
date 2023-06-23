@@ -2,28 +2,37 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
 
   return (
     //this part of navbar is hidden in small devices
     <>
-    
-      <ul className="hidden text-primarywhite absolute top-0 z-50 font-nexaheavy text-lg w-full md:flex md:justify-end md:px-6 md:py-4 md:gap-x-8 ">
-        <li className="hover:text-purple-300 ">
-          <Link href="/">About</Link>
-        </li>
-        <li className="hover:text-purple-300 ">
-          <Link href="/team">Team</Link>
-        </li>
-        <li className="hover:text-purple-300 ">
-          <Link href="/contact">Contact</Link>
-        </li>
-        <li className="hover:text-purple-300 ">
-          <Link href="/">Gallery</Link>
-        </li>
-      </ul>
-
+      <AnimatePresence>
+        <motion.ul
+          
+          key="navAnimation"
+          initial={{ x: "100%", opacity: 0 }}
+          animate={{ x: "0%", opacity: 100 }}
+          exit={{ x: "100%" }}
+          transition={{ duration:0.9}}
+          className="hidden text-primarywhite absolute top-0 z-50 font-nexaheavy text-lg w-full md:flex md:justify-end md:px-6 md:py-4 md:gap-x-8 "
+        >
+          <li className="md:px-4 rounded-md hover:bg-opacity-30 hover:bg-gray-600">
+            <Link href="/">About</Link>
+          </li>
+          <li className="md:px-4 rounded-md hover:bg-opacity-30 hover:bg-gray-600 ">
+            <Link href="/team">Team</Link>
+          </li>
+          <li className="md:px-4 rounded-md hover:bg-opacity-30 hover:bg-gray-600">
+            <Link href="/contact">Contact</Link>
+          </li>
+          <li className="md:px-4 rounded-md hover:bg-opacity-30 hover:bg-gray-600">
+            <Link href="/">Gallery</Link>
+          </li>
+        </motion.ul>
+      </AnimatePresence>
       <div
         onClick={() => {
           setShowNav(!showNav);
@@ -46,9 +55,8 @@ export default function Navbar() {
           </>
         )}
       </div>
-          
+
       <ul
-      
         className={`${
           showNav ? "" : "hidden"
         } text-primarywhite absolute right-2 top-20 tracking-wider text-right z-50 font-nexaheavy space-y-6 md:text-lg md:w-full md:hiddden`}
@@ -66,7 +74,6 @@ export default function Navbar() {
           <Link href="/">Gallery</Link>
         </li>
       </ul>
-    
     </>
   );
 }
