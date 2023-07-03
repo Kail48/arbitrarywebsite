@@ -38,7 +38,7 @@ export default function Subsidiaries() {
   ];
   return (
     <div className="h-screen bg-white">
-      <div className="relative h-[115px] w-[175px] left-2 top-2">
+      <div className="relative h-[115px] w-[175px] left-2 top-2 hover:animate-pulse">
         <Link href="/">
           <Image src={"/image/logoBlack.png"} alt="logo" fill={true} />
         </Link>
