@@ -33,9 +33,9 @@ export default function Page() {
             PHOTOGRAPHY
           </h1>
           <p className="font-nexalight text-justify">
-            We supply everything a brand requires to make their product pop or
+            {`We supply everything a brand requires to make their product pop or
             their events shine including lighting packages, backdrops, studio
-            hire as well as advanced post-processing and photo editing.
+            hire as well as advanced post-processing and photo editing.`}
           </p>
         </div>
         <div className="flex flex-col items-center">
@@ -44,10 +44,10 @@ export default function Page() {
             COMMERCIAL ADS & TVCs
           </h1>
           <p className="font-nexalight text-justify">
-            It makes sense to have one supplier for both photography and video
+            {`It makes sense to have one supplier for both photography and video
             production. By offering both services, we can ensure the brand
             remains consistent and their experience as seamless and efficient as
-            possible
+            possible.`}
           </p>
         </div>
         <div className="flex flex-col items-center ">
@@ -56,10 +56,10 @@ export default function Page() {
             GRAPHIC DESIGN
           </h1>
           <p className="font-nexalight text-justify">
-            We don't want our clients to ride a design trend that fades into
+            {`We don't want our clients to ride a design trend that fades into
             obscurity and we don't want our clients to be irrelevant by never
             adapting. By providing this service we aim to place you in a
-            position where your designs will be current relevant.
+            position where your designs will be current relevant.`}
           </p>
         </div>
         <div className="flex flex-col items-center">
@@ -68,9 +68,9 @@ export default function Page() {
             VIDEO EDITING
           </h1>
           <p className="font-nexalight text-justify">
-            Ranging from cinematography to post production, we have proficiency
+            {`Ranging from cinematography to post production, we have proficiency
             in more than handful video projects and styles. Get professional
-            video post production services in the style that suits your brand.
+            video post production services in the style that suits your brand.`}
           </p>
         </div>
       </div>
